@@ -203,7 +203,6 @@ footer{background:white;border-top:1px solid var(--border);text-align:center;pad
     <button class="active" onclick="showTab('diversity',this)">Diversity Scores</button>
     <button onclick="showTab('query',this)">Custom Diversity Index</button>
     <button onclick="showTab('explorer',this)">Explorer</button>
-    <button onclick="showTab('miss',this)">Missingness</button>
   </nav>
   <div id="tab-diversity" class="tab active"><div class="container">
 
@@ -258,9 +257,6 @@ footer{background:white;border-top:1px solid var(--border);text-align:center;pad
       <div class="tbl-wrap"><table id="exp-table"></table></div>
     </div>
   </div></div>
-  <div id="tab-miss" class="tab"><div class="container">
-    <div class="callout callout-amber">Missing data limits reliability of Shannon indices. Only non-missing records are used to compute H.</div>
-    <div class="card"><div class="card-title">Missingness per axis</div><div class="card-sub">Red = &gt;10% missing.</div><div id="miss-bars"></div></div>
   </div></div>
 </div>
 <footer>Markatou E.A., Knowles P., Carvalho L.A., Chronaki C. &mdash; MEDINFO 2025 &middot; doi:10.3233/SHTI251212 &middot; <em>All datasets are synthetic.</em> &middot; Part of the <a href="http://nextgentools.eu/" target="_blank" style="color:var(--gray-400)">NextGen project</a>.</footer>
